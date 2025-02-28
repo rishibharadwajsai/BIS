@@ -1,0 +1,1532 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Call for Papers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Loading animation styles */
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 1000;
+      }
+
+      .loading div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        background: #3498db;
+        animation: bounce 1.2s infinite ease-in-out;
+      }
+
+      .loading div:nth-child(1) {
+        animation-delay: -0.32s;
+      }
+      .loading div:nth-child(2) {
+        animation-delay: -0.16s;
+      }
+
+      @keyframes bounce {
+        0%,
+        80%,
+        100% {
+          transform: scale(0);
+        }
+        40% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading" id="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="root">
+      <div class="flex flex-col md:flex-row items-center p-4">
+        <a href="https://chennai.vit.ac.in/" target="_blank">
+          <img
+            src="./images/blue-vit-logo.png"
+            alt="VIT logo"
+            class="w-60 h-30 rounded order-1 my-6"
+          />
+        </a>
+        <div class="md:flex-1 text-center order-2">
+          <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
+            <span class="text-green-600">G</span>reen
+            <span class="text-green-600">R</span>evolution in
+            <span class="text-green-600">E</span>lectronics
+            <span class="text-green-600">E</span>ngineering and
+            <span class="text-green-600">N</span>etworks
+            <span class="text-green-600">Con</span>ference
+            <span class="text-green-600">(GREENCON)</span> 2025
+          </h1>
+          <h2 class="text-md font-semibold sm:text-xl mt-1 text-gray-600">
+            19<sup>th</sup> - 21<sup>st</sup> March, 2025
+          </h2>
+          <h2
+            class="text-md capitalize font-semibold sm:text-2xl mt-1 text-green-800"
+          >
+            An international conference organized by
+          </h2>
+          <h2 class="text-md font-semibold sm:text-2xl mt-1 text-red-500">
+            School of Electronics Engineering
+          </h2>
+          <p class="text-sm sm:text-3xl mt-1 font-semibold text-gray-900">
+            Vellore Institute of Technology, Chennai
+          </p>
+        </div>
+        <img
+          src="./logos/HighRes_Trpt.png"
+          alt="Greencon logo"
+          class="md:w-40 w-36 md:order-3 order-3 mt-2 md:mt-0"
+          onclick="window.location.href='/';"
+          style="cursor: pointer"
+        />
+      </div>
+      <nav class="bg-[#addfca] border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8"
+        >
+          <!-- Hamburger Menu Button for Mobile -->
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            class="hidden w-full flex items-start flex-col space-y-2 md:hidden mt-4"
+            id="navbar-default"
+          >
+            <a
+              href="./index.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Home</a
+            >
+            <a
+              href="./AboutVit.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >About VIT</a
+            >
+            <a
+              href="./Registration.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Registration</a
+            >
+            <a
+              href="./AdvisoryBoard.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Advisory Board</a
+            >
+            <a
+              href="./ConferenceSpeakers.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            >
+              Conference Speakers
+            </a>
+            <a
+              href="./CallForPapers.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 bg-gray-200 rounded-lg border-2 border-black"
+              >Call for Papers</a
+            >
+            <a
+              href="./PaperSubmission.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Paper Submission</a
+            >
+            <a
+              href="./OrganizingCommittee.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Organizing Committee</a
+            >
+            <a
+              href="./ContactUs.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden w-full md:flex my-auto md:space-x-6"
+            id="navbar-default"
+          >
+            <a
+              href="./index.html"
+              class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Home</a
+            >
+            <a
+              href="./AboutVit.html"
+              class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >About VIT</a
+            >
+            <a
+              href="./Registration.html"
+              class="text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Registration</a
+            >
+            <a
+              href="./AdvisoryBoard.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Advisory Board</a
+            >
+            <a
+              href="./ConferenceSpeakers.html"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+            >
+              Conference Speakers
+            </a>
+            <a
+              href="./CallForPapers.html"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1 bg-gray-200 rounded-lg border-2 border-black"
+              >Call for Papers</a
+            >
+            <a
+              href="./PaperSubmission.html"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Paper Submission</a
+            >
+            <a
+              href="./OrganizingCommittee.html"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Organizing Committee</a
+            >
+            <a
+              href="./ContactUs.html"
+              class="text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Pages
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  ></path></svg
+                ><span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+              <p
+                class="text-base leading-relaxed text-black dark:text-gray-200"
+              >
+                Updating soon......
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="App">
+        <center
+          class="mx-auto w-5/6 mt-10 rounded-lg border-[#35575a] border-2 p-4"
+        >
+          <ul class="list-disc list-inside">
+            <li
+              class="text-justify text-black text-base md:text-lg font-medium leading-relaxed"
+            >
+              You are invited to submit your research work to GREENCON 2025
+              through the Conference Management ToolKit (CMT) Online Submission
+              Portal. Please ensure that the paper is original and has not been
+              submitted or published elsewhere. The conference features seven
+              different symposiums to choose from.
+            </li>
+            <li
+              class="text-justify text-black text-base md:text-lg font-medium leading-relaxed"
+            >
+              Proceedings on Engineering Sciences, a Scopus-indexed journal,
+              have agreed to publish papers from GREENCON 2025, subject to
+              meeting their quality requirements.
+            </li>
+            <li
+              class="text-justify text-black text-base md:text-lg font-medium leading-relaxed"
+            >
+              A select number of papers will be published in a special issue of
+              Talanta Open (a Scopus-indexed journal with an impact factor of
+              4.2), provided they meet the journal's quality standards and fall
+              within its scope. The APC charges will be in accordance with the
+              journal's guidelines.
+            </li>
+          </ul>
+          <!-- <p
+            class="text-justify text-black text-base md:text-lg font-medium leading-relaxed"
+          >
+            Proceedings on Engineering Sciences, a Scopus-indexed journal, have
+            agreed to publish papers from GREENCON 2025, subject to meeting
+            their quality requirements.
+          </p>
+          <p
+            class="text-justify text-black text-base md:text-lg font-medium leading-relaxed"
+          >
+            A select number of papers will be published in a special issue of
+            Talanta Open (a Scopus-indexed journal with an impact factor of
+            4.2), provided they meet the journal's quality standards and fall
+            within its scope. The APC charges will be in accordance with the
+            journal's guidelines.
+          </p> -->
+        </center>
+
+        <div
+          class="max-w-screen-xl flex flex-wrap flex-col items-center justify-center mx-auto mb-20"
+        >
+          <h1 class="mt-10 text-3xl font-bold uppercase text-[#35575a]">
+            Symposiums
+          </h1>
+          <div
+            class="mt-2 h-0.5 w-[20%] sm:w-[10%] bg-[#35575a] rounded-md"
+          ></div>
+          <div class="w-full mt-10">
+            <div id="accordion-vlsi">
+              <!-- First Section: VLSI -->
+              <h2 id="accordion-vlsi-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black rounded-t-xl focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-vlsi-body-1"
+                  aria-expanded="false"
+                  aria-controls="accordion-vlsi-body-1"
+                >
+                  <span class="text-lg text-left"
+                    >Sustainable Innovations in VLSI Devices, Circuits, and
+                    Systems</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-vlsi-body-1"
+                class="hidden"
+                aria-labelledby="accordion-vlsi-heading-1"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/prathiba.jpeg"
+                        alt="Dr. Prathiba A"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Prathiba A</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/umadevi.jpg"
+                        alt="Dr. Umadevi S"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Umadevi S</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Innovative Material and Devices Technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Quantum Computing for VLSI
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Emerging Processors for System Design
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Analog IC Design, RF and Mixed Signal IC Design
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Advances in CAD for VLSI
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Automated Electronic Design Techniques for VLSI Systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Innovative Memory Solutions in Advanced VLSI Systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Testing and Verification of VLSI circuits
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Cutting-Edge MEMS devices and Microfluidic Technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Advancements in VLSI Hardware for AI and Machine Learning
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Hardware and System Security
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Neuromorphic Computing – Spiking Neural Networks, Neuron
+                      models
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Energy-efficient Reliable System Design
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2 id="accordion-magnet-heading-2 ">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-magnet-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-magnet-body-2"
+                >
+                  <span class="text-lg text-left">
+                    Microwave and Antenna Green Networks and Emerging
+                    Technologies (MAGNET)
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-magnet-body-2"
+                class="hidden"
+                aria-labelledby="accordion-magnet-heading-2"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/ushakiran.jpg"
+                        alt="Dr. Usha Kiran Kommuri"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Usha Kiran Kommuri</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/organizing-committee/niraj.jpg"
+                        alt="Dr. Niraj Kumar"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Niraj Kumar</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Flexible, Wearable and Implantable antennas
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Intelligent reflector surfaces for 5G/6G Mobile Networking
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Metamaterial, metasurface, FSS and EBG structures
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      RF energy harvesting and wireless power transfer antennas
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      3D printed Microwave devices and antennas
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Ultra-wideband (UWB) antennas and Dielectric Resonator
+                      antenna
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Antennas for NexGen Networks: Mobile, Vehicular
+                      Communications, and UAVs in 5G/6G and Beyond
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      RF technologies, antennas, and devices for space and
+                      defense applications
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Reconfigurable antennas, adaptive arrays, active and smart
+                      antennas
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      MIMO, Beamforming techniques, and phased array antennas
+                      for 5G
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Antennas for Underwater communication
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Integrating RCS Reduction Strategies in Green Engineering
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Quantum Computing and AI/ML for Advancing Antenna Design
+                      and Optimization
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Computational Electromagnetics for Microwave and Antenna
+                      Design
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Passive/Active Microwave, mm-Wave, and THz components and
+                      circuits
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Compact and Miniaturized TWT Devices for Emerging
+                      Technologies
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <h2 id="accordion-photonics-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-photonics-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-photonics-body-3"
+                >
+                  <span class="text-lg text-left">
+                    Green Innovations in Photonics & Optical
+                    Communication and Networks
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-photonics-body-3"
+                class="hidden"
+                aria-labelledby="accordion-photonics-heading-3"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/sivasubramanian.jpg"
+                        alt="Dr. Sivasubramanian A"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Sivasubramanian A</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/ilavarasan.jpg"
+                        alt="Dr. Ilavarasan T"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Ilavarasan T</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Energy-Efficient Optical Networks for Carbon Footprint
+                      Reduction
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Green Photonics: Advancements in Eco-Friendly Light-Based
+                      Technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Low-Power Optical Communication Systems for Green ICT
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Photonic Integration for Green Data Centers
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Optical Communication in Smart Grids and Green Energy
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Photonic Materials for Eco-Friendly Device Fabrication
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Emerging Green Photonics in Smart Cities
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Energy-Efficient Optical Amplifiers and Repeaters
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Optical Communication Technologies for Low-Energy IoT
+                      Solutions
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Underwater Optical Communication for Sustainable Marine
+                      Technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Eco-Conscious Free Space Optical technology
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Quantum Photonics and Applications for Sustainable
+                      Technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Energy-Efficient Optical Signal Processing & Microwave
+                      Photonics
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Eco-Friendly Optical Sensors for Environmental Monitoring
+                      and Sustainability
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Ultrafast Photonics and Nonlinear fiber optics
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-signal-image">
+              <!-- Fourth Section: Signal and Image Processing -->
+              <h2 id="accordion-signal-image-heading-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-signal-image-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-signal-image-body-4"
+                >
+                  <span class="text-lg text-left">
+                    Signal and Image Processing for Sustainable Development
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-signal-image-body-4"
+                class="hidden"
+                aria-labelledby="accordion-signal-image-heading-4"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/vijayarajan.jpg"
+                        alt="Dr. Vijayarajan R"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Vijayarajan R</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/sss.jpg"
+                        alt="Dr. Sankar Ganesh S"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Sankar Ganesh S</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Audio and Acoustic Signal Processing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      AI for Speech and Language Processing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Signal/Image Processing for Healthcare Applications
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      AI for Signal/Image Processing and Computer Vision
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Ethical Healthcare Intelligence
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Reproducible/Responsible AI for Signal and Image
+                      Processing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Sensor Array and Multichannel Signal Processing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Computer Vision for Smart Cities
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Image Processing for Sustainable and Precision Farming
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Signal/Image Processing for Autonomous Robot Navigation
+                      and Process Automation
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Signal Processing for Radar and Sonar Applications
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-sustainable-intelligent">
+              <!-- Fifth Section: Sustainable Intelligent Systems -->
+              <h2 id="accordion-sustainable-intelligent-heading-5">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-sustainable-intelligent-body-5"
+                  aria-expanded="false"
+                  aria-controls="accordion-sustainable-intelligent-body-5"
+                >
+                  <span class="text-lg text-left">
+                    Sustainable Intelligent Systems
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-sustainable-intelligent-body-5"
+                class="hidden"
+                aria-labelledby="accordion-sustainable-intelligent-heading-5"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/organizing-committee/gugapriya.jpg"
+                        alt="Dr. Gugapriya G"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Gugapriya G</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/organizing-committee/abraham.jpg"
+                        alt="Dr. Abraham Sudharson Ponraj"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">
+                          Dr. Abraham Sudharson Ponraj
+                        </div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Energy-efficient embedded systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      IoT enabled Manufacturing and Industrial Automation
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Sustainable Smart City Technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Integration of intelligent sensors in embedded systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Security and privacy in embedded IoT networks
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Human-robot interaction in embedded environments
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Climate change and sustainability through embedded
+                      technologies
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Edge computing for healthcare analytics and decision
+                      support
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Modern embedded technologies for agricultural automation
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Adaptive learning algorithms for real-time embedded
+                      systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Emerging technologies for sustainable automotive embedded
+                      systems
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-intelligent-wireless">
+              <!-- Sixth Section: Intelligent Wireless Communication System -->
+              <h2 id="accordion-intelligent-wireless-heading-6">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-intelligent-wireless-body-6"
+                  aria-expanded="false"
+                  aria-controls="accordion-intelligent-wireless-body-6"
+                >
+                  <span class="text-lg text-left">
+                    Intelligent Wireless Communication and Networks
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-intelligent-wireless-body-6"
+                class="hidden"
+                aria-labelledby="accordion-intelligent-wireless-heading-6"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/organizing-committee/vijaykumar.jpg"
+                        alt="Dr. Vijaya Kumar P"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Vijaya Kumar P</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/berlin.jpg"
+                        alt="Dr. Berlin Hency V"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Berlin Hency V</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Cognitive Radio and Dynamic Spectrum Access
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Vehicular Ad-Hoc Networks (VANETs)
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Wireless Communication for Smart Grids
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Millimeter-Wave and Terahertz Communication
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Massive MIMO and Beamforming
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Wireless Power Transfer and Energy Harvesting
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Satellite Communication and Unmanned Aerial Vehicles
+                      (UAVs)
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Quantum Communication and Cryptography
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Mobile Edge Computing and Fog Networks
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Reconfigurable Intelligent Surfaces for 5G /6G
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Machine and Deep Learning for Wireless Communication
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Transfer Learning for Wireless Communication and Networks
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="accordion-data-driven-innovations">
+              <!-- Seventh Section: Data-Driven Innovations in Electronics Engineering -->
+              <h2 id="accordion-data-driven-innovations-heading-7">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full p-5 font-semibold text-black border border-black focus:ring-4 focus:ring-gray-200 bg-[#dff2ea] gap-3"
+                  data-accordion-target="#accordion-data-driven-innovations-body-7"
+                  aria-expanded="false"
+                  aria-controls="accordion-data-driven-innovations-body-7"
+                >
+                  <span class="text-lg text-left">
+                    Data-Driven Innovations in Electronics Engineering
+                  </span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-data-driven-innovations-body-7"
+                class="hidden"
+                aria-labelledby="accordion-data-driven-innovations-heading-7"
+              >
+                <div class="p-5 border border-b-0 border-gray-200">
+                  <h3 class="text-2xl font-normal text-center">
+                    Symposium Chairs
+                  </h3>
+                  <div
+                    class="flex flex-row flex-wrap mt-5 justify-around items-center w-full border-2 border-black"
+                  >
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/logesh.jpg"
+                        alt="Dr. Logesh R"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Logesh R</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col mx-10 mt-10 mb-5 items-center">
+                      <img
+                        src="./images/suganthi.jpg"
+                        alt="Dr. Suganthi K"
+                        class="w-40 border-2 border-black"
+                      />
+                      <div class="text-center mt-5 text-xl w-full">
+                        <div class="font-semibold">Dr. Suganthi K</div>
+                        <div>VIT Chennai</div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3
+                    class="mt-10 w-full text-center text-2xl bg-[#addfca] text-[#2b4a4d] py-2 font-bold"
+                  >
+                    Topics
+                  </h3>
+                  <ul class="text-start w-full">
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Machine Learning Algorithms for Enhancing Signal
+                      Processing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Predictive Maintenance for Electronic Devices Using Big
+                      Data
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Edge Computing and Real-Time Data Processing in
+                      Electronics
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Data Analytics for Enhanced Performance of Semiconductor
+                      Devices
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Big Data Applications in VLSI Design and Testing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Automated Fault Detection in Electronic Systems Using AI
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      AI-Enhanced Thermal Management in High-Performance
+                      Electronics
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Advanced Data Compression Techniques for Electronics
+                      Systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Data-Centric Approaches to Improve Antenna Design
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Real-Time Data Acquisition and Processing in Sensor
+                      Networks and Wireless Communication Systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Integration of Big Data Analytics in IoT Devices
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Data-Driven Modelling and Simulation of Electronic Systems
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      AI-Driven Optimization in Consumer Electronics, Robotics
+                      and Manufacturing
+                    </li>
+                    <li
+                      class="text-xl my-2 hover:bg-gray-300 p-2 font-medium shadow-md"
+                    >
+                      Data Mining Techniques for Enhancing Electronic Design
+                      Automation (EDA)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-white border-black border-t-2 w-full">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div
+            class="flex flex-col w-full justify-center sm:flex-row md:justify-between"
+          >
+            <!-- <a
+              href="https://chennai.vit.ac.in/"
+              class="mb-6 md:mb-0 flex justify-center sm:justify-start"
+              ><img
+                src="./logos/vitlogo-white.jpg"
+                class="h-12 lg:h-20 me-3"
+                alt="FlowBite Logo"
+            /></a> -->
+            <div class="flex w-full justify-center sm:justify-start">
+              <ul
+                class="text-gray-800 w-full justify-between grid grid-rows-3 text-sm md:text-base grid-flow-col gap-4"
+              >
+                <li><a href="./index.html" class="hover:underline">Home</a></li>
+                <li>
+                  <a href="./AboutVit.html" class="hover:underline"
+                    >About VIT</a
+                  >
+                </li>
+                <li>
+                  <a href="./Registration.html" class="hover:underline"
+                    >Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="./AdvisoryBoard.html" class="hover:underline"
+                    >Advisory Board</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    >Conference Speakers</a
+                  >
+                </li>
+                <li>
+                  <a href="./CallForPapers.html" class="hover:underline"
+                    >Call for Papers</a
+                  >
+                </li>
+                <li>
+                  <a href="./PaperSubmission.html" class="hover:underline"
+                    >Paper Submission</a
+                  >
+                </li>
+                <li>
+                  <a href="./OrganizingCommittee.html" class="hover:underline"
+                    >Organizing committee</a
+                  >
+                </li>
+                <li>
+                  <a href="./ContactUs.html" class="hover:underline"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <hr class="border-[#addfca] sm:mx-auto" />
+      <div
+        class="sm:flex sm:items-center sm:justify-between text-sm md:text-base bg-[#addfca] p-8"
+      >
+        <span
+          class="font-semibold text-sm text-[#2b4a4d] sm:text-center dark:text-[#2b4a4d]"
+          >© 2024
+          <a href="https://chennai.vit.ac.in/" class="hover:underline"
+            >VIT Chennai</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Pages
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  ></path></svg
+                ><span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+              <p
+                class="text-base leading-relaxed text-gray-200 dark:text-gray-200"
+              >
+                Updating soon......
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordions = document.querySelectorAll("[data-accordion-target]");
+
+        accordions.forEach((accordion) => {
+          accordion.addEventListener("click", function () {
+            const target = document.querySelector(
+              this.getAttribute("data-accordion-target")
+            );
+            const icon = this.querySelector("[data-accordion-icon]");
+
+            if (target.classList.contains("hidden")) {
+              target.classList.remove("hidden");
+              icon.classList.remove("rotate-180");
+            } else {
+              target.classList.add("hidden");
+              icon.classList.add("rotate-180");
+            }
+          });
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      // JavaScript to manage loading animation
+      window.addEventListener("load", () => {
+        // Hide the loading animation
+        document.getElementById("loading").style.display = "none";
+        // Show the root content
+        document.getElementById("root").style.display = "block";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,908 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>VIT-BIS FEST 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function updateCountdown() {
+        const deadline = new Date("March 19, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const timeRemaining = deadline - now;
+
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (timeRemaining < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("days").innerText = "0";
+          document.getElementById("hours").innerText = "0";
+          document.getElementById("minutes").innerText = "0";
+          document.getElementById("seconds").innerText = "0";
+        }
+      }
+
+      const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+    <style>
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+
+      .animate-scroll {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+      }
+
+      .fade-animation {
+        animation: fadeOut 1s linear infinite;
+      }
+
+      .fade-animation:hover {
+        animation: none;
+        opacity: 1;
+      }
+
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        z-index: 1000;
+      }
+
+      .loading div {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        background: #34db82;
+        animation: bounce 1.2s infinite ease-in-out;
+      }
+
+      .loading div:nth-child(1) {
+        animation-delay: -0.32s;
+      }
+      .loading div:nth-child(2) {
+        animation-delay: -0.16s;
+      }
+
+      @keyframes bounce {
+        0%,
+        80%,
+        100% {
+          transform: scale(0);
+        }
+        40% {
+          transform: scale(1);
+        }
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        width: 100%;
+        padding: 5px 0;
+      }
+
+      .marquee-text {
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #d10000; /* Red text */
+        animation: marquee 25s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading" id="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="root">
+      <div class="flex flex-col md:flex-row items-center p-4">
+        <a href="https://chennai.vit.ac.in/" target="_blank">
+          <img
+            src="./images/blue-vit-logo.png"
+            alt="VIT logo"
+            class="w-72 h-30 rounded order-1 my-6"
+          />
+        </a>
+        <div class="md:flex-1 text-center order-2">
+          <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
+            <!-- <span class="text-green-600">G</span>reen
+            <span class="text-green-600">R</span>evolution in
+            <span class="text-green-600">E</span>lectronics
+            <span class="text-green-600">E</span>ngineering and
+            <span class="text-green-600">N</span>etworks
+            <span class="text-green-600">Con</span>ference
+            <span class="text-green-600">(GREENCON)</span> 2025 -->
+            VIT-BIS FEST 2025
+          </h1>
+          <h2 class="text-md font-semibold sm:text-xl mt-1 text-gray-600">
+            11<sup>th</sup> March, 2025
+          </h2>
+          <h2
+            class="text-md capitalize font-semibold sm:text-2xl mt-1 text-green-800"
+          >
+            A National Fest organized by
+          </h2>
+          <h2 class="text-md font-semibold sm:text-2xl mt-1 text-red-500">
+            School of Electronics Engineering,<br />Vellore Institute of
+            Technology, Chennai
+          </h2>
+          <p class="text-sm sm:text-2xl mt-1 font-semibold text-gray-900">
+            In association with <br />
+            Bureau of Indian Standards
+          </p>
+        </div>
+        <img
+          src="./logos/bis.png"
+          alt="Greencon logo"
+          class="md:w-72 w-48 md:order-3 order-3 mt-2 md:mt-0"
+          onclick="window.location.href='/';"
+          style="cursor: pointer"
+        />
+      </div>
+
+      <nav class="bg-[#2957a3] border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:px-8"
+        >
+          <!-- Hamburger Menu Button for Mobile -->
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu -->
+          <div
+            class="hidden w-full flex items-start flex-col space-y-2 md:hidden mt-4"
+            id="navbar-default"
+          >
+            <a
+              href="./index.html"
+              class="block text-white hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium bg-gray-200 rounded-lg border-2 border-white"
+              >Home</a
+            >
+            <a
+              href="./AboutVit.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >About VIT</a
+            >
+            <a
+              href="./Registration.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Registration</a
+            >
+            <a
+              href="./AdvisoryBoard.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+              >Advisory Board</a
+            >
+            <a
+              href="./ConferenceSpeakers.html"
+              class="block text-gray-700 hover:text-[#3c5a96] hover:bg-gray-200 px-1 py-1 transition-colors duration-300 font-medium"
+            >
+              Conference Speakers
+            </a>
+            <a
+              href="./CallForPapers.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Call for Papers</a
+            >
+            <a
+              href="./PaperSubmission.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Paper Submission</a
+            >
+            <a
+              href="./OrganizingCommittee.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Organizing Committee</a
+            >
+            <a
+              href="./ContactUs.html"
+              class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div
+            class="hidden w-full md:flex my-auto md:space-x-6"
+            id="navbar-default"
+          >
+            <a
+              href="./index.html"
+              class="text-white hover:text-white rounded-lg border-2 border-white bg-black px-1 py-1 transition-colors duration-300 font-medium"
+              >Home</a
+            >
+            <a
+              href="./AboutVit.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >About VIT</a
+            >
+            <a
+              href="./Registration.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Registration</a
+            >
+            <a
+              href="./AdvisoryBoard.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Advisory Board</a
+            >
+            <a
+              href="./ConferenceSpeakers.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Conference Speakers</a
+            >
+            <a
+              href="./CallForPapers.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Call for Papers</a
+            >
+            <a
+              href="./PaperSubmission.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Paper Submission</a
+            >
+            <a
+              href="./OrganizingCommittee.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Organizing Committee</a
+            >
+            <a
+              href="./ContactUs.html"
+              class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Pages
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  ></path></svg
+                ><span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+              <p
+                class="text-base leading-relaxed text-black dark:text-gray-200"
+              >
+                Updating soon......
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="marquee-container w-full">
+        <span class="marquee-text w-full"
+          >Early Bird Registration is now open
+          <a class="" href="https://vitchennaievents.com/conf1/"
+            >(Click Here)</a
+          ></span
+        >
+      </div> -->
+      <div class="App">
+        <section
+          class="flex flex-col sm:flex-row justify-around mx-auto bg-[#152c58]"
+        >
+          <!-- <div class="md:w-1/4">
+            <div class="relative max-w-2xl mx-auto mt-10 px-4 mb-12 py-2">
+              <div
+                class="absolute border-l-2 border-green-800 h-full left-6 top-0"
+              ></div>
+              <ul class="space-y-6">
+                <li class="relative pl-8">
+                  <div
+                    class="absolute top-6 left-0 w-4 h-4 bg-green-900 rounded-full mt-1.5"
+                  ></div>
+                  <div
+                    class="bg-gray-50 shadow-lg p-4 border border-green-900 rounded-br-[1rem] rounded-tl-xl hover:cursor-pointer hover:bg-white"
+                  >
+                    <h3 class="text-sm font-semibold text-gray-500">
+                      <span class="line-through"
+                        >15<sup>th</sup> Dec, 2024</span
+                      >
+                      <br />
+                      <span class="text-red-500">
+                        15<sup>th</sup> Feb, 2025 (Submission Closed)</span
+                      >
+                    </h3>
+                    <p class="mt-2 text-[#35575a] font-medium">
+                      Submission of full paper
+                    </p>
+                  </div>
+                </li>
+                <li class="relative pl-8">
+                  <div
+                    class="absolute top-6 left-0 w-4 h-4 bg-green-900 rounded-full mt-1.5"
+                  ></div>
+                  <div
+                    class="bg-gray-50 shadow-lg p-4 border border-green-900 rounded-br-[1rem] rounded-tl-xl hover:cursor-pointer hover:bg-white"
+                  >
+                    <h3 class="text-sm font-semibold text-gray-500">
+                      20<sup>th</sup> Feb, 2025
+                    </h3>
+                    <p class="mt-2 text-[#35575a] font-medium">
+                      Final acceptance notification
+                    </p>
+                  </div>
+                </li>
+                <li class="relative pl-8">
+                  <div
+                    class="absolute top-6 left-0 w-4 h-4 bg-green-900 rounded-full mt-1.5"
+                  ></div>
+                  <div
+                    class="bg-gray-50 shadow-lg p-4 border border-green-900 rounded-br-[1rem] rounded-tl-xl hover:cursor-pointer hover:bg-white"
+                  >
+                    <h3 class="text-sm font-semibold text-gray-500">
+                      Upto 3<sup>rd</sup> March, 2025
+                    </h3>
+                    <p class="mt-2 text-[#35575a] font-medium">
+                      Early bird registration
+                    </p>
+                  </div>
+                </li>
+                <li class="relative pl-8">
+                  <div
+                    class="absolute top-6 left-0 w-4 h-4 bg-green-900 rounded-full mt-1.5"
+                  ></div>
+                  <div
+                    class="bg-gray-50 shadow-lg p-4 border border-green-900 rounded-br-[1rem] rounded-tl-xl hover:cursor-pointer hover:bg-white"
+                  >
+                    <h3 class="text-sm font-semibold text-gray-500">
+                      3<sup>rd</sup> March, 2025
+                    </h3>
+                    <p class="mt-2 text-[#35575a] font-medium">
+                      Submission of camera ready paper
+                    </p>
+                  </div>
+                </li>
+                <li class="relative pl-8">
+                  <div
+                    class="absolute top-6 left-0 w-4 h-4 bg-green-900 rounded-full mt-1.5"
+                  ></div>
+                  <div
+                    class="bg-gray-50 shadow-lg p-4 border border-green-900 rounded-br-[1rem] rounded-tl-xl hover:cursor-pointer hover:bg-white"
+                  >
+                    <h3 class="text-sm font-semibold text-gray-500">
+                      10<sup>th</sup> March, 2025
+                    </h3>
+                    <p class="mt-2 text-[#35575a] font-medium">
+                      Last date for conference registration
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class=""></div>
+          </div> -->
+          <div class="mx-auto">
+            <div class="p-6 max-w-4xl mx-auto my-10 rounded-xl">
+              <h2
+                class="text-white font-bold text-lg md:text-2xl text-center decoration-red-600 mb-6"
+              >
+                ABOUT THE CONFERENCE
+              </h2>
+              <p
+                class="text-justify text-white text-sm md:text-base leading-relaxed"
+              >
+                Green Revolution in Electronics Engineering and Networks
+                Conference (GREENCON) 2025 is slated for March 19 – 21, 2025, at
+                Vellore Institute of Technology, Chennai, Tamil Nadu, India. The
+                School of Electronics Engineering at VIT Chennai is excited to
+                host this international conference, providing a platform to
+                explore cutting-edge research in electronics, communication, and
+                networks, with an emphasis on sustainable and eco-friendly
+                advancements. It aims to facilitate the exchange of innovative
+                ideas and research findings among professionals and researchers.
+                This conference will enrich the knowledge of the participants,
+                fostering further research and innovation. It will also provide
+                an opportunity for aspiring engineers and experts in related
+                fields to network and collaborate.
+              </p>
+              <p
+                class="mt-2 text-justify text-white text-sm md:text-base leading-relaxed"
+              >
+                The main goal of this conference is to gather prominent academic
+                scientists, researchers, and scholars to exchange and share
+                their experiences and research findings on various emerging
+                trends and technologies in Electronics, Acoustics, Speech,
+                Video, Signal Processing, Wireless Communication Networks and
+                Systems, as well as Antennas, Microwave, RF, and Optical
+                Communication Networks and Devices. Experts in these disciplines
+                from around the world will be invited to provide keynote
+                addresses and invited lectures. Proceedings on Engineering
+                Sciences, a Scopus-indexed journal, have agreed to publish
+                papers from GREENCON 2025, subject to meeting their quality
+                requirements. A select number of papers will be published in a
+                special issue of Talanta Open (a Scopus-indexed journal with an
+                impact factor of 4.2), provided they meet the journal's quality
+                standards and fall within its scope. The APC charges will be in
+                accordance with the journal's guidelines.
+              </p>
+              <div
+                class="w-full flex flex-col md:flex-row justify-center mt-8 space-y-3 md:space-y-0 md:space-x-4"
+              >
+                <a
+                  href="./Registration.html"
+                  class="bg-[#2957a3] text-white text-center px-6 py-2 w-48 rounded-md font-semibold transition-colors"
+                  >Registration</a
+                ><a
+                  href="./CallForPapers.html"
+                  class="bg-[#2957a3] text-white text-center px-6 py-2 w-48 rounded-mdfont-semibold transition-colors"
+                  >Call for Papers</a
+                >
+                <a
+                  href="./PaperSubmission.html"
+                  class="bg-[#2957a3] text-white text-center px-6 py-2 w-48 rounded-md font-semibold transition-colors"
+                  >Paper Submission</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- <div class="md:w-1/3">
+            <div class="w-full px-8 mx-auto my-10">
+              <div
+                class="bg-[#addfca] text-[#2b4a4d] p-2 rounded-t-lg text-center border-green-500"
+              >
+                <h2 class="text-lg font-bold text-[#2b4a4d]">IMPORTANT</h2>
+              </div>
+              <div
+                class="marquee h-80 overflow-hidden relative bg-white"
+                style="position: relative"
+              >
+                <ul
+                  class="list-disc ms-4 p-2 leading-relaxed space-y-4 animate-scroll"
+                >
+                  <li class="font-semibold">
+                    Early bird registration is now open
+                  </li>
+                  <li class="font-semibold">
+                    <a href="./PaperSubmission.html"
+                      >Paper Submission link is now closed.</a
+                    >
+                  </li>
+                  <li class="font-semibold">
+                    A few selected papers will be published in
+                    <span class="text-red-500"
+                      >Proceedings on Engineering Sciences</span
+                    >
+                    (a Scopus indexed journal).
+                  </li>
+                  <li class="font-semibold">
+                    A select number of papers will be published in a special
+                    issue of <span class="text-red-500">Talanta Open</span> (a
+                    Scopus-indexed journal with an impact factor of 4.2),
+                    provided they meet the journal's quality standards and fall
+                    within its scope. The APC charges will be in accordance with
+                    the journal's guidelines.
+                  </li>
+                  <li class="font-semibold">
+                    Online presentation option will be made available based on
+                    requests from registered participants.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+          <!-- </div> -->
+        </section>
+        <div class="w-full md:w-[80%] px-10 mx-auto my-12">
+          <table class="table-auto w-full text-left text-sm border-green-900">
+            <thead>
+              <tr class="bg-[#87cbb3] text-white">
+                <th class="px-4 py-2">Registration Fee</th>
+                <th class="px-4 py-2">Indian (INR)</th>
+                <th class="px-4 py-2">Foreign (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-blue-100 text-black">
+                <td class="border px-4 py-2 font-bold" colspan="3">
+                  Early Bird Registration (15<sup>th</sup> Feb, 2025 - 28<sup
+                    >th</sup
+                  >
+                  Feb, 2025)
+                </td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Student</td>
+                <td class="border px-4 py-2">Rs. 5900*</td>
+                <td class="border px-4 py-2">150 USD</td>
+              </tr>
+              <tr class="bg-blue-50 text-black">
+                <td class="border px-4 py-2">Faculty & Industry</td>
+                <td class="border px-4 py-2">Rs. 7080*</td>
+                <td class="border px-4 py-2">200 USD</td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Co Authors (Participants)</td>
+                <td class="border px-4 py-2">Rs. 4720*</td>
+                <td class="border px-4 py-2">100 USD</td>
+              </tr>
+
+              <tr class="bg-blue-100 text-black">
+                <td class="border px-4 py-2 font-bold" colspan="3">
+                  Regular Registration (on or before 10<sup>th</sup> March,
+                  2025)
+                </td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Student</td>
+                <td class="border px-4 py-2">Rs. 7080*</td>
+                <td class="border px-4 py-2">200 USD</td>
+              </tr>
+              <tr class="bg-blue-50 text-black">
+                <td class="border px-4 py-2">Faculty & Industry</td>
+                <td class="border px-4 py-2">Rs. 8260*</td>
+                <td class="border px-4 py-2">250 USD</td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">Co Authors (Participants)</td>
+                <td class="border px-4 py-2">Rs. 5900*</td>
+                <td class="border px-4 py-2">150 USD</td>
+              </tr>
+              <tr class="bg-white text-black">
+                <td class="border px-4 py-2">* Inclusive of 18% GST</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row max-w-screen-lg justify-center items-center mx-auto space-y-10 md:space-y-0 md:space-x-20 mb-24"
+        >
+          <img
+            src="./logos/CEDA_logo.jpeg"
+            alt="CEDA_Logo"
+            class="md:w-1/3 w-96 md:mt-24"
+          />
+          <img
+            src="./logos/meity.jpeg"
+            alt="meity_logo"
+            class="mt-20 md:mt-0 w-72"
+          />
+        </div>
+        <h1
+          class="mt-20 mb-10 border-b-2 border-[#35575a] w-[50%] pb-2 text-base md:text-3xl font-bold text-[#35575a] text-center mx-auto uppercase"
+        >
+          our sponsors
+        </h1>
+        <center
+          class="flex flex-col md:flex-row max-w-screen-lg justify-center items-center mx-auto space-y-10 md:space-y-0 md:space-x-20 mb-24"
+        >
+          <img
+            src="./logos/comcon.jpeg"
+            alt="meity_logo"
+            class="md:mt-20 w-80"
+          />
+          <img src="./logos/hvtech.jpeg" alt="meity_logo" class="mt-10 w-60" />
+        </center>
+
+        <!-- <center>
+          <img
+            src="./images/media1.png"
+            alt="CEDA_Logo"
+            class="md:w-1/3 w-96"
+          />
+          <img
+            src="./images/media2.jpg"
+            alt="CEDA_Logo"
+            class="md:w-1/3 w-96"
+          />
+        </center> -->
+        <h2
+          class="mt-24 mb-12 border-b-2 border-[#35575a] w-[50%] pb-2 text-base md:text-3xl font-bold text-[#35575a] text-center mx-auto uppercase"
+        >
+          Media Partners
+        </h2>
+        <center
+          class="flex flex-col md:flex-row max-w-screen-lg justify-center mx-auto space-y-10 md:space-y-0 md:space-x-20 mb-24"
+        >
+          <div>
+            <a
+              href="https://internationalconferencealerts.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/media1.png" alt="CEDA_Logo" class="w-80" />
+            </a>
+            <a
+              href="https://internationalconferencealerts.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p class="mt-5 text-center text-blue-600 font-medium">
+                (www.internationalconferencealerts.com)
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://conferencealerts.co.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/media2.jpg"
+                alt="CEDA_Logo"
+                class="w-80 md:w-96"
+              />
+            </a>
+            <a
+              href="https://conferencealerts.co.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p class="mt-5 text-center text-blue-600 font-medium">
+                (www.conferencealerts.co.in)
+              </p>
+            </a>
+          </div>
+        </center>
+
+        <div
+          class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg border border-gray-200 w-11/12 sm:w-1/2 mx-auto mt-8 mb-28"
+        >
+          <h1
+            class="w-full text-lg md:text-2xl font-bold mb-16 bg-[#62b895] text-[#2b4a4d] text-center py-4"
+          >
+            GREENCON 2025
+          </h1>
+          <div class="flex space-x-4 sm:space-x-8 text-xl font-semibold mb-8">
+            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
+              <span id="days" class="text-4xl text-[#3c5a96]">176</span>
+              <span class="text-gray-500 mt-2 text-sm">Days</span>
+            </div>
+            <div
+              class="flex flex-col items-center bg-gray-100 px-4 py-4 rounded-xl"
+            >
+              <span id="hours" class="text-4xl text-[#3c5a96]">13</span>
+              <span class="text-gray-500 mt-2 text-sm">Hours</span>
+            </div>
+            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
+              <span id="minutes" class="text-4xl text-[#3c5a96]">53</span>
+              <span class="text-gray-500 mt-2 text-sm">Minutes</span>
+            </div>
+            <div class="flex flex-col items-center bg-gray-100 p-4 rounded-xl">
+              <span id="seconds" class="text-4xl text-[#3c5a96]">40</span>
+              <span class="text-gray-500 mt-2 text-sm">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-white border-black border-t-2 w-full">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div
+            class="flex flex-col w-full justify-center sm:flex-row md:justify-between"
+          >
+            <!-- <a
+              href="https://chennai.vit.ac.in/"
+              class="mb-6 md:mb-0 flex justify-center sm:justify-start"
+              ><img
+                src="./logos/vitlogo-white.jpg"
+                class="h-12 lg:h-20 me-3"
+                alt="FlowBite Logo"
+            /></a> -->
+            <div class="flex w-full justify-center sm:justify-start">
+              <ul
+                class="text-gray-800 w-full justify-between grid grid-rows-3 text-sm md:text-base grid-flow-col gap-4"
+              >
+                <li><a href="./index.html" class="hover:underline">Home</a></li>
+                <li>
+                  <a href="./AboutVit.html" class="hover:underline"
+                    >About VIT</a
+                  >
+                </li>
+                <li>
+                  <a href="./Registration.html" class="hover:underline"
+                    >Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="./AdvisoryBoard.html" class="hover:underline"
+                    >Advisory Board</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:underline"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    >Conference Speakers</a
+                  >
+                </li>
+                <li>
+                  <a href="./CallForPapers.html" class="hover:underline"
+                    >Call for Papers</a
+                  >
+                </li>
+                <li>
+                  <a href="./PaperSubmission.html" class="hover:underline"
+                    >Paper Submission</a
+                  >
+                </li>
+                <li>
+                  <a href="./OrganizingCommittee.html" class="hover:underline"
+                    >Organizing committee</a
+                  >
+                </li>
+                <li>
+                  <a href="./ContactUs.html" class="hover:underline"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <hr class="border-[#addfca] sm:mx-auto" />
+      <div
+        class="sm:flex sm:items-center sm:justify-between text-sm md:text-base bg-[#addfca] p-8"
+      >
+        <span
+          class="font-semibold text-sm text-[#2b4a4d] sm:text-center dark:text-[#2b4a4d]"
+          >© 2024
+          <a href="https://chennai.vit.ac.in/" class="hover:underline"
+            >VIT Chennai</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+      <div
+        id="default-modal"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+            >
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                Pages
+              </h3>
+              <button
+                type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  ></path></svg
+                ><span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+              <p
+                class="text-base leading-relaxed text-gray-200 dark:text-gray-200"
+              >
+                Updating soon......
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script>
+      // JavaScript to manage loading animation
+      window.addEventListener("load", () => {
+        // Hide the loading animation
+        document.getElementById("loading").style.display = "none";
+        // Show the root content
+        document.getElementById("root").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
