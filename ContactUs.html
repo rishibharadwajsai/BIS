@@ -57,14 +57,23 @@
       <div></div>
     </div>
     <div id="root">
-      <div class="flex flex-col md:flex-row items-center p-4">
-        <a href="https://chennai.vit.ac.in/" target="_blank">
+      <div
+        class="flex flex-col flex-wrap space-y-4 md:flex-row items-center p-4"
+      >
+        <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 order-1">
+          <a href="https://chennai.vit.ac.in/" target="_blank">
+            <img
+              src="./images/blue-vit-logo.png"
+              alt="VIT logo"
+              class="w-48 h-30 rounded my-6"
+            />
+          </a>
           <img
-            src="./images/blue-vit-logo.png"
+            src="./logos/swc.jpeg"
             alt="VIT logo"
-            class="w-72 h-30 rounded order-1 my-6"
+            class="w-56 h-32 rounded my-6"
           />
-        </a>
+        </div>
         <div class="md:flex-1 text-center order-2">
           <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
             <!-- <span class="text-green-600">G</span>reen
@@ -93,13 +102,22 @@
             Bureau of Indian Standards
           </p>
         </div>
-        <img
-          src="./logos/bis.png"
-          alt="Greencon logo"
-          class="md:w-72 w-48 md:order-3 order-3 mt-2 md:mt-0"
-          onclick="window.location.href='/';"
-          style="cursor: pointer"
-        />
+        <div class="flex flex-col space-y-4 md:space-x-4 md:flex-row order-3">
+          <img
+            src="./logos/bis.jpeg"
+            alt="Greencon logo"
+            class="md:w-48 w-24 mt-2 md:mt-0"
+            onclick="window.location.href='/';"
+            style="cursor: pointer"
+          />
+          <img
+            src="./logos/bis.png"
+            alt="Greencon logo"
+            class="md:w-48 w-24 mt-2 md:mt-0"
+            onclick="window.location.href='/';"
+            style="cursor: pointer"
+          />
+        </div>
       </div>
 
       <nav class="bg-[#2957a3] border-gray-200">
@@ -148,7 +166,7 @@
               >About VIT</a
             >
             <a
-              href="#"
+              href="./Registration.html"
               class="block text-white rounded-xl transition-colors duration-300 font-medium hover:bg-black px-1 py-1"
               >Registration</a
             >
@@ -200,7 +218,7 @@
               >About VIT</a
             >
             <a
-              href="#"
+              href="./Registration.html"
               class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
@@ -396,9 +414,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover:underline"
-                    >Registration</a
-                  >
+                  <a href="./Registration.html" class="hover:underline">Registration</a>
                 </li>
                 <!-- <li>
                   <a href="./AdvisoryBoard.html" class="hover:underline"
