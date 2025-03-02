@@ -143,14 +143,21 @@
       <div></div>
     </div>
     <div id="root">
-      <div class="flex flex-col md:flex-row items-center p-4">
-        <a href="https://chennai.vit.ac.in/" target="_blank">
+      <div class="flex flex-col flex-wrap space-y-4 md:flex-row items-center p-4">
+        <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 order-1">
+          <a href="https://chennai.vit.ac.in/" target="_blank">
+            <img
+              src="./images/blue-vit-logo.png"
+              alt="VIT logo"
+              class="w-48 h-30 rounded my-6"
+            />
+          </a>
           <img
-            src="./images/blue-vit-logo.png"
+            src="./logos/swc.jpeg"
             alt="VIT logo"
-            class="w-72 h-30 rounded order-1 my-6"
+            class="w-56 h-32 rounded my-6"
           />
-        </a>
+        </div>
         <div class="md:flex-1 text-center order-2">
           <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
             <!-- <span class="text-green-600">G</span>reen
@@ -179,13 +186,22 @@
             Bureau of Indian Standards
           </p>
         </div>
-        <img
-          src="./logos/bis.png"
-          alt="Greencon logo"
-          class="md:w-72 w-48 md:order-3 order-3 mt-2 md:mt-0"
-          onclick="window.location.href='/';"
-          style="cursor: pointer"
-        />
+        <div class="flex flex-col space-y-4 md:space-x-4 md:flex-row order-3">
+          <img
+            src="./logos/bis.jpeg"
+            alt="Greencon logo"
+            class="md:w-48 w-24  mt-2 md:mt-0"
+            onclick="window.location.href='/';"
+            style="cursor: pointer"
+          />
+          <img
+            src="./logos/bis.png"
+            alt="Greencon logo"
+            class="md:w-48 w-24 mt-2 md:mt-0"
+            onclick="window.location.href='/';"
+            style="cursor: pointer"
+          />
+        </div>
       </div>
 
       <nav class="bg-[#2957a3] border-gray-200">
@@ -234,7 +250,7 @@
               >About VIT</a
             >
             <a
-              href="#"
+              href="./Registration.html"
               class="block text-white rounded-xl hover:bg-black px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
@@ -287,7 +303,7 @@
               >About VIT</a
             >
             <a
-              href="#"
+              href="./Registration.html"
               class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
@@ -484,21 +500,49 @@
               <p
                 class="text-justify text-white text-sm md:text-base leading-relaxed"
               >
-              The Bureau of Indian Standards (BIS) is India’s national standards body, functioning under the Ministry of Consumer Affairs, Food & Public Distribution. Established under the BIS Act, 2016, it is responsible for formulating, certifying, and enforcing quality and safety standards for various products and services. BIS plays a crucial role in consumer protection, industrial development, and international trade by ensuring compliance with globally recognized benchmarks. It provides certifications such as the ISI mark for industrial and consumer goods, the Hallmark for gold and silver jewelry, and the Compulsory Registration Scheme (CRS) for electronic products. Additionally, BIS conducts product testing, quality assessments, and market surveillance to uphold reliability and safety standards.
-
+                The Bureau of Indian Standards (BIS) is India’s national
+                standards body, functioning under the Ministry of Consumer
+                Affairs, Food & Public Distribution. Established under the BIS
+                Act, 2016, it is responsible for formulating, certifying, and
+                enforcing quality and safety standards for various products and
+                services. BIS plays a crucial role in consumer protection,
+                industrial development, and international trade by ensuring
+                compliance with globally recognized benchmarks. It provides
+                certifications such as the ISI mark for industrial and consumer
+                goods, the Hallmark for gold and silver jewelry, and the
+                Compulsory Registration Scheme (CRS) for electronic products.
+                Additionally, BIS conducts product testing, quality assessments,
+                and market surveillance to uphold reliability and safety
+                standards.
               </p>
               <p
                 class="mt-2 text-justify text-white text-sm md:text-base leading-relaxed"
               >
-              Awareness of BIS standards is essential to fostering a culture of quality and compliance among manufacturers and consumers. The organization actively engages in training programs, workshops, and awareness campaigns to educate stakeholders on the benefits of standardization. BIS certification enhances consumer trust, promotes business credibility, and ensures safer products in the market. Through initiatives like the Standards Promotion & Consumer Affairs Department, BIS disseminates information via advertisements, digital outreach, and collaborations with educational institutions to instill awareness about quality assurance among students, professionals, and businesses.
-
+                Awareness of BIS standards is essential to fostering a culture
+                of quality and compliance among manufacturers and consumers. The
+                organization actively engages in training programs, workshops,
+                and awareness campaigns to educate stakeholders on the benefits
+                of standardization. BIS certification enhances consumer trust,
+                promotes business credibility, and ensures safer products in the
+                market. Through initiatives like the Standards Promotion &
+                Consumer Affairs Department, BIS disseminates information via
+                advertisements, digital outreach, and collaborations with
+                educational institutions to instill awareness about quality
+                assurance among students, professionals, and businesses.
               </p>
               <p
                 class="mt-2 text-justify text-white text-sm md:text-base leading-relaxed"
               >
-              Despite these efforts, widespread awareness and adoption of BIS certification remain a challenge. Strengthening public outreach through enhanced digital campaigns, integrating standardization into educational curricula, and fostering industry collaborations can improve compliance and consumer awareness. Government support, combined with industry-led initiatives, can further encourage the use of BIS-certified products. By increasing awareness and accessibility, BIS can help ensure product safety, enhance consumer confidence, and boost India’s manufacturing sector, aligning it with global quality standards. 
-
-
+                Despite these efforts, widespread awareness and adoption of BIS
+                certification remain a challenge. Strengthening public outreach
+                through enhanced digital campaigns, integrating standardization
+                into educational curricula, and fostering industry
+                collaborations can improve compliance and consumer awareness.
+                Government support, combined with industry-led initiatives, can
+                further encourage the use of BIS-certified products. By
+                increasing awareness and accessibility, BIS can help ensure
+                product safety, enhance consumer confidence, and boost India’s
+                manufacturing sector, aligning it with global quality standards.
               </p>
               <!-- <div
                 class="w-full flex flex-col md:flex-row justify-center mt-8 space-y-3 md:space-y-0 md:space-x-4"
@@ -775,9 +819,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover:underline"
-                    >Registration</a
-                  >
+                  <a href="#" class="hover:underline">Registration</a>
                 </li>
                 <!-- <li>
                   <a href="./AdvisoryBoard.html" class="hover:underline"
