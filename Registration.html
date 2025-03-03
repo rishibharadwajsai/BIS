@@ -74,14 +74,23 @@
       <div></div>
     </div>
     <div id="root">
-      <div class="flex flex-col md:flex-row items-center p-4">
-        <a href="https://chennai.vit.ac.in/" target="_blank">
+      <div
+        class="flex flex-col flex-wrap space-y-4 md:flex-row items-center p-4"
+      >
+        <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 order-1">
+          <a href="https://chennai.vit.ac.in/" target="_blank">
+            <img
+              src="./images/blue-vit-logo.png"
+              alt="VIT logo"
+              class="w-48 h-30 rounded my-6"
+            />
+          </a>
           <img
-            src="./images/blue-vit-logo.png"
+            src="./logos/swc.jpeg"
             alt="VIT logo"
-            class="w-72 h-30 rounded order-1 my-6"
+            class="w-56 h-32 rounded my-6"
           />
-        </a>
+        </div>
         <div class="md:flex-1 text-center order-2">
           <h1 class="text-lg sm:text-3xl font-bold text-gray-800">
             <!-- <span class="text-green-600">G</span>reen
@@ -110,13 +119,22 @@
             Bureau of Indian Standards
           </p>
         </div>
-        <img
-          src="./logos/bis.png"
-          alt="Greencon logo"
-          class="md:w-72 w-48 md:order-3 order-3 mt-2 md:mt-0"
-          onclick="window.location.href='/';"
-          style="cursor: pointer"
-        />
+        <div class="flex flex-col space-y-4 md:space-x-4 md:flex-row order-3">
+          <img
+            src="./logos/bis.jpeg"
+            alt="Greencon logo"
+            class="md:w-48 w-24 mt-2 md:mt-0"
+            onclick="window.location.href='/';"
+            style="cursor: pointer"
+          />
+          <img
+            src="./logos/bis.png"
+            alt="Greencon logo"
+            class="md:w-48 w-24 mt-2 md:mt-0"
+            onclick="window.location.href='/';"
+            style="cursor: pointer"
+          />
+        </div>
       </div>
       <nav class="bg-[#2957a3] border-gray-200">
         <div
@@ -164,7 +182,7 @@
               >About VIT</a
             >
             <a
-              href="#"
+              href="./Registration.html"
               class="block text-white hover:bg-black px-1 py-1 transition-colors duration-300 font-medium bg-black rounded-lg border-2 border-white"
               >Registration</a
             >
@@ -189,11 +207,11 @@
               class="block text-gray-700 hover:text-[#3c5a96] transition-colors duration-300 font-medium hover:bg-gray-200 px-1 py-1"
               >Paper Submission</a
             > -->
-            <a
+            <!-- <a
               href="./OrganizingCommittee.html"
               class="block text-white rounded-xl transition-colors duration-300 font-medium hover:bg-black px-1 py-1"
               >Patrons</a
-            >
+            > -->
             <a
               href="./ContactUs.html"
               class="block text-white rounded-xl transition-colors duration-300 font-medium hover:bg-black px-1 py-1"
@@ -217,7 +235,7 @@
               >About VIT</a
             >
             <a
-              href="#"
+              href="./Registration.html"
               class="text-white bg-black border-2 border-white rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
               >Registration</a
             >
@@ -241,11 +259,11 @@
               class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
               >Paper Submission</a
             > -->
-            <a
+            <!-- <a
               href="./OrganizingCommittee.html"
               class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
               >Patrons</a
-            >
+            > -->
             <a
               href="./ContactUs.html"
               class="text-white hover:bg-black rounded-lg px-1 py-1 transition-colors duration-300 font-medium"
@@ -308,36 +326,60 @@
               <thead class="bg-[#2957a3] text-white">
                 <tr>
                   <th class="px-4 py-2 text-left">S.No</th>
-                  <th class="px-4 py-2 text-left">Club ID</th>
+                  <th class="px-4 py-2 text-left">BIS Standard Club ID</th>
                   <th class="px-4 py-2 text-left">Event Name</th>
                   <!-- <th class="px-4 py-2 text-left">Coordinators</th> -->
                   <th class="px-4 py-2 text-left">Download Brochure</th>
+                  <th class="px-4 py-2 text-left">Registeration</th>
                 </tr>
               </thead>
               <tbody class="text-gray-700">
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">1</td>
-                  <td class="px-4 py-2">Club001</td>
+                  <td class="px-4 py-2">SC-11151</td>
                   <td class="px-4 py-2">Reels</td>
+
                   <!-- <td class="px-4 py-2">
                     Dr. Richards Joe Stanislaus, Dr. Priyanka Das
                   </td> -->
                   <td class="px-4 py-2">
-                    <a href="#" class="text-blue-500 hover:underline"
+                    <a
+                      href="public\Reel_Revolution_VIT-BIS_FEST2025.pdf"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      download="Reel_Revolution_VIT-BIS_FEST2025.pdf"
                       >Download</a
+                    >
+                  </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
                     >
                   </td>
                 </tr>
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">2</td>
-                  <td class="px-4 py-2">Club002</td>
+                  <td class="px-4 py-2">SC-11149</td>
                   <td class="px-4 py-2">Ad-Mad Activity</td>
                   <!-- <td class="px-4 py-2">
                     Dr. Karthikeyan P R, Dr. Abraham Sudharson Ponraj
                   </td> -->
                   <td class="px-4 py-2">
-                    <a href="#" class="text-blue-500 hover:underline"
-                      >Download</a
+                    <a
+                      href="https://www.canva.com/design/DAGc7vEYxvM/MkVBGJmKa4F2L46a-OCa3g/edit?utm_content=DAGc7vEYxvM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                      class="text-blue-500 hover:underline"
+                      >Click Here</a
+                    >
+                  </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
                     >
                   </td>
                 </tr>
@@ -347,8 +389,20 @@
                   <td class="px-4 py-2">Poster</td>
                   <!-- <td class="px-4 py-2">Dr. Arivarasi A, Dr. Nirmala P</td> -->
                   <td class="px-4 py-2">
-                    <a href="#" class="text-blue-500 hover:underline"
+                    <a
+                      href="public\Poster presentation event.pdf"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      download="Poster presentation event.pdf"
                       >Download</a
+                    >
+                  </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
                     >
                   </td>
                 </tr>
@@ -365,6 +419,14 @@
                       >Download</a
                     >
                   </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
+                    >
+                  </td>
                 </tr>
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">5</td>
@@ -376,6 +438,14 @@
                   <td class="px-4 py-2">
                     <a href="#" class="text-blue-500 hover:underline"
                       >Download</a
+                    >
+                  </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
                     >
                   </td>
                 </tr>
@@ -393,6 +463,14 @@
                       >Download</a
                     >
                   </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
+                    >
+                  </td>
                 </tr>
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">7</td>
@@ -404,6 +482,14 @@
                   <td class="px-4 py-2">
                     <a href="#" class="text-blue-500 hover:underline"
                       >Download</a
+                    >
+                  </td>
+                  <td class="px-4 py-2">
+                    <a
+                      href="https://vitchennaievents.com/conf1/"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      >Register</a
                     >
                   </td>
                 </tr>
@@ -487,7 +573,9 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">Registration</a>
+                  <a href="./Registration.html" class="hover:underline"
+                    >Registration</a
+                  >
                 </li>
                 <!-- <li>
                   <a href="./AdvisoryBoard.html" class="hover:underline"
@@ -512,11 +600,11 @@
                     >Paper Submission</a
                   >
                 </li> -->
-                <li>
+                <!-- <li>
                   <a href="./OrganizingCommittee.html" class="hover:underline"
                     >Patrons</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a href="./ContactUs.html" class="hover:underline"
                     >Contact Us</a
