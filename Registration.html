@@ -65,6 +65,10 @@
           transform: scale(1);
         }
       }
+
+      .modal-bg {
+        background: rgba(0, 0, 0, 0.5);
+      }
     </style>
   </head>
   <body>
@@ -72,6 +76,25 @@
       <div></div>
       <div></div>
       <div></div>
+    </div>
+    <div
+      id="popupModal"
+      class="fixed inset-0 flex items-center justify-center modal-bg"
+    >
+      <div class="bg-white p-2 rounded-lg shadow-lg relative overflow-hidden">
+        <button
+          id="closeModal"
+          class="absolute top-2 right-2 text-black bg-gray-200 hover:text-black text-2xl"
+        >
+          &times;
+        </button>
+
+        <img
+          src="./public/main_poster.jpeg"
+          alt="Popup Image"
+          class="rounded-lg max-h-[80vh] w-auto"
+        />
+      </div>
     </div>
     <div id="root">
       <div
@@ -384,8 +407,7 @@
                 </tr>
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">3</td>
-                  <td class="px-4 py-2">SC-11148
-                  </td>
+                  <td class="px-4 py-2">SC-11148</td>
                   <td class="px-4 py-2">Poster Presentation</td>
                   <!-- <td class="px-4 py-2">Dr. Arivarasi A, Dr. Nirmala P</td> -->
                   <td class="px-4 py-2">
@@ -407,15 +429,22 @@
                 </tr>
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">4</td>
-                  <td class="px-4 py-2">SC-11149
-                  </td>
+                  <td class="px-4 py-2">SC-11149</td>
                   <td class="px-4 py-2">BIS MedHackathon</td>
                   <!-- <td class="px-4 py-2">
                     Dr. John Sahaya Rani Alex, Dr. Annis Fathima A, Dr. Sathiya
                     Narayanan S, Dr. Manigandan M
                   </td> -->
                   <td class="px-4 py-2">
+<<<<<<< Updated upstream
                     <a href="https://drive.google.com/file/d/1JITdhaugAkBstScCVbbXDkiZFfKm0SX0/view?usp=drive_link" class="text-blue-500 hover:underline" target="_blank" 
+=======
+                    <a
+                      href="public\MEDIHACK.pdf"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      download="MEDIHACK.pdf"
+>>>>>>> Stashed changes
                       >Download</a
                     >
                   </td>
@@ -430,15 +459,22 @@
                 </tr>
                 <tr class="border-b hover:bg-gray-100">
                   <td class="px-4 py-2">5</td>
-                  <td class="px-4 py-2">SC-11147
-                  </td>
+                  <td class="px-4 py-2">SC-11147</td>
                   <td class="px-4 py-2">BIS ProTech V.1 Project Display</td>
                   <!-- <td class="px-4 py-2">
                     Dr. Bala Murugan M S, Dr. Manoj Kumar R
                   </td> -->
                   <td class="px-4 py-2">
+<<<<<<< Updated upstream
                     <a href="https://drive.google.com/file/d/1wSicDDBoczXijsBGZDi3-Sivn46o-xTv/view?usp=sharing
                     " class="text-blue-500 hover:underline" target="_blank" 
+=======
+                    <a
+                      href="public\BIS Project Display.jpg"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      download="BIS Project Display"
+>>>>>>> Stashed changes
                       >Download</a
                     >
                   </td>
@@ -482,8 +518,16 @@
                   </td>
                   <!-- <td class="px-4 py-2">Dr. Jagannath M, Dr. Suhasini S</td> -->
                   <td class="px-4 py-2">
+<<<<<<< Updated upstream
                     <a href="https://drive.google.com/file/d/1uN1XLBuJcY5S-Ym5-C_KaI-wCobSaGS2/view?usp=sharing
                     " class="text-blue-500 hover:underline" target="_blank" 
+=======
+                    <a
+                      href="public\Know Your Standards .jpg"
+                      class="text-blue-500 hover:underline"
+                      target="_blank"
+                      download="Know Your Standards"
+>>>>>>> Stashed changes
                       >Download</a
                     >
                   </td>
@@ -709,6 +753,18 @@
         // Show the root content
         document.getElementById("root").style.display = "block";
       });
+    </script>
+    <script>
+      window.onload = function () {
+        const modal = document.getElementById("popupModal");
+        const closeModal = document.getElementById("closeModal");
+        const mainContent = document.getElementById("mainContent");
+
+        closeModal.addEventListener("click", function () {
+          modal.classList.add("hidden"); // Hide the modal
+          mainContent.classList.remove("hidden"); // Show main content
+        });
+      };
     </script>
   </body>
 </html>
